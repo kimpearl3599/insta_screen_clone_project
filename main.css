@@ -1,0 +1,204 @@
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap {
+    width: 100rem;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+.header {
+    margin: 0 auto;
+    width: 100rem;
+    z-index:1;
+    position: fixed;
+    top:0;
+    display: block;
+    height: 12rem;
+    background-color: #fff;
+    border-bottom: 0.1rem solid #e0e0e0;
+    padding: 1rem 4rem 2rem 4rem;
+    box-sizing: border-box;
+}
+.header > .btn_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    width: 50rem;
+    height: 10rem;
+    background-image: url(./images/insta-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.header > .btn_group > img {
+    width: 6rem;
+    height: 6rem;
+}
+.container {
+    width: 100rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+.banner {
+    height: 20rem;
+    background-color: #f5f5f5;
+    padding: 2rem 4rem 2rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 0.1rem solid #e0e0e0;
+
+}
+.banner > .story_box > img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100rem;
+    border: 0.4rem solid #e0e0e0;
+}
+.banner > .story_box > p {
+    margin-top: 1rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #373737;
+}
+.board_top {
+    position: relative;
+    height: 12rem;
+    box-sizing: border-box;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.board_top_left {
+    display: flex;
+    align-items: center;
+}
+.board_top_left > .user {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100rem;
+}
+.board_top_left > p {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.board_top > .more {
+    width: 5rem;
+    height: 5rem;
+    background-image: url(./images/more@3x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 0;
+}
+.board_top > img {
+    
+}
+.story_board{
+    padding-bottom: 2rem;
+}
+.story_board > .main_image {
+    height: 100rem;
+    background-image: url(./images/christmas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.board_bottom {
+    height: 25rem;
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 0.1rem solid #e0e0e0;
+
+}
+.board_bottom > .btn_group {
+    height: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+
+}
+.board_bottom > .btn_group > img{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+.board_bottom > .favorite {
+    position: absolute;
+    margin-top: 2rem;
+    margin-right: 0;
+    align-self: flex-end;
+    width: 6rem;
+    height: 6rem;
+}
+.comment > .like_num {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.comment > .like_num >.like_influencer {
+    background-image: url(./images/like_influencer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100rem;
+}
+.comment > p {
+    font-size: 3rem;
+}
+.comment > .like_num > p {
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.comment > .like_num > p strong {
+    font-weight: 700;
+}
+.comment > p strong {
+    font-weight: 700;
+}
+.comment > .before_hour {
+    font-size: 2rem;
+    color: gray;
+    margin-top: 4rem;
+}
+.footer {
+    margin: 0 auto;
+    width: 100rem;
+    z-index:1;
+    position: fixed;
+    bottom: 0;
+    height: 12rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 0.1rem solid #e0e0e0;
+}
+.footer > img {
+    width: 4.2rem;
+    height: 4.2rem;
+}
