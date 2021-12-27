@@ -1,3 +1,9 @@
+/*@media (max-width: 720px) {*/
+/*    html {*/
+/*        font-size: 62.5%;*/
+/*    }*/
+/*}*/
+
 
 html {
     font-size: 62.5%;
@@ -5,81 +11,90 @@ html {
     padding: 0;
 }
 body {
-    max-width: 100rem;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0;
+    position: relative;
 }
 
 .wrap {
-    width: 100rem;
     margin: 0 auto;
-    height: 100vh;
-    position: relative;
+
 }
 .header {
+    max-width: 720px;
     margin: 0 auto;
-    width: 100rem;
+    width: 100%;
     z-index:1;
     position: fixed;
     top:0;
     display: block;
-    height: 12rem;
+    height: 5rem;
     background-color: #fff;
     border-bottom: 0.1rem solid #e0e0e0;
-    padding: 1rem 4rem 2rem 4rem;
     box-sizing: border-box;
+    padding: 0 1.5rem;
 }
-.header > .btn_group {
+.header  .btn_group {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 #logo {
-    width: 50rem;
-    height: 10rem;
+    width: 12rem;
+    height: 5rem;
     background-image: url(./images/insta-logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.header > .btn_group > img {
-    width: 6rem;
-    height: 6rem;
+.header  .btn_group  img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.header  .btn_group_desk {
+    display: none;
 }
 .container {
-    width: 100rem;
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.container_recommend {
+    display: none;
 }
 .banner {
-    height: 20rem;
+    overflow: hidden;
+    height: 10rem;
     background-color: #f5f5f5;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 0 1rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
     border-bottom: 0.1rem solid #e0e0e0;
-
 }
-.banner > .story_box > img {
-    width: 12rem;
-    height: 12rem;
+.banner .story_box {
+    width: auto;
+    margin-right: 1rem;
+}
+.banner  .story_box > img {
+    width: 6rem;
+    height: 6rem;
     border-radius: 100rem;
-    border: 0.4rem solid #e0e0e0;
+    border: 0.2rem solid #e0e0e0;
 }
-.banner > .story_box > p {
-    margin-top: 1rem;
-    font-size: 2.4rem;
+.banner  .story_box > p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #373737;
 }
 .board_top {
     position: relative;
-    height: 12rem;
+    height: 5rem;
     box-sizing: border-box;
-    padding: 0 4rem 0 4rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,18 +104,18 @@ body {
     align-items: center;
 }
 .board_top_left > .user {
-    width: 8rem;
-    height: 8rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 100rem;
 }
 .board_top_left > p {
-    font-size: 3.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
-.board_top > .more {
-    width: 5rem;
-    height: 5rem;
+.board_top  .more {
+    width: 2rem;
+    height: 2rem;
     background-image: url(./images/more@3x.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -109,88 +124,88 @@ body {
     align-self: flex-end;
     margin-right: 0;
 }
-.board_top > img {
+.board_top  img {
     
 }
 .story_board{
-    padding-bottom: 2rem;
+
 }
-.story_board > .main_image {
-    height: 100rem;
+.story_board  .main_image {
+    height: 40rem;
     background-image: url(./images/christmas.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
+
 }
 .board_bottom {
-    height: 25rem;
-    padding: 2rem 4rem 2rem 4rem;
+    height: 12rem;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     position: relative;
-    border: 0.1rem solid #e0e0e0;
-
+    border-bottom: 0.1rem solid #e0e0e0;
 }
-.board_bottom > .btn_group {
-    height: 10rem;
+.board_bottom  .btn_group {
+    height: 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
 }
-.board_bottom > .btn_group > img{
-    width: 6rem;
-    height: 6rem;
-    margin-right: 2rem;
+.board_bottom  .btn_group  img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
-.board_bottom > .favorite {
+.board_bottom  .favorite {
     position: absolute;
-    margin-top: 2rem;
     margin-right: 0;
     align-self: flex-end;
-    width: 6rem;
-    height: 6rem;
+    width: 2rem;
+    height: 2rem;
 }
-.comment > .like_num {
+.comment  .like_num {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
-.comment > .like_num >.like_influencer {
+.comment  .like_num .like_influencer {
     background-image: url(./images/like_influencer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100rem;
 }
-.comment > p {
-    font-size: 3rem;
+.comment  p {
+    font-size: 1.2rem;
 }
-.comment > .like_num > p {
-    font-size: 3rem;
-    margin-left: 2rem;
+.comment  .like_num  p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
-.comment > .like_num > p strong {
+.comment  .like_num  p strong {
     font-weight: 700;
 }
-.comment > p strong {
+.comment  p strong {
     font-weight: 700;
 }
-.comment > .before_hour {
-    font-size: 2rem;
+.comment  .before_hour {
+    font-size: 1rem;
     color: gray;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .footer {
+    max-width: 720px;
     margin: 0 auto;
-    width: 100rem;
+    width: 100%;
     z-index:1;
     position: fixed;
     bottom: 0;
-    height: 12rem;
+    height: 5rem;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -198,7 +213,7 @@ body {
     box-sizing: border-box;
     border-top: 0.1rem solid #e0e0e0;
 }
-.footer > img {
-    width: 4.2rem;
-    height: 4.2rem;
+.footer  img {
+    width: 2rem;
+    height: 2rem;
 }
